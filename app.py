@@ -40,7 +40,7 @@ grasps_options = {
 def get_gpt_response(prompt):
     try:
         response = client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "당신은 GRASPS 모형을 활용한 프로젝트 수업 설계를 돕는 전문가입니다."},
                 {"role": "user", "content": prompt}
